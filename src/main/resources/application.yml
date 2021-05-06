@@ -1,0 +1,17 @@
+spring:
+  #配置邮箱
+  mail:
+    host: smtp.qq.com  #邮箱服务商的protocol服务器主机
+    port: 465
+    protocol: smtp #邮件协议
+    username: 123456@qq.com # 123456@qq.com
+    nickname: rosy #发送者昵称
+    password: hwquvcihoc #邮箱账号密码或者三方登录授权码
+    default-encoding:  UTF-8
+    properties:
+      mail:
+        smtp:
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+        debug: true #调试模式
+    test-connection: false #启动项目时验证是否可以正确通信 默认为false
